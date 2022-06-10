@@ -5,7 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
     <title>Odin Sign Up</title>
   </head>
-  <body></body>
+  <body>
+    <div class="left">
+      <div class="left-logo">
+        <img src="./assets/odin-lined.png" width="20%" alt="ODIN" />
+        <div class="left-logo-text">ODIN</div>
+      </div>
+      <div class="image-footer">Photo by Halie West on Unsplash</div>
+    </div>
+    <div class="right">
+      <div class="right-text">
+        This is not a real online service! You know you need something like this
+        in your life to help you realize your deepest dreams. Sign up
+        <emph>now</emph> to get started.
+      </div>
+      <div class="right-text">You <emph>know</emph> you want to.</div>
+      <div class="form-box">
+        <h2>Let's do this!</h2>
+        <form method="post" class="form" id="form">
+          <div class="input">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" name="first-name" id="first-name" />
+          </div>
+          <div class="input">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" name="last-name" id="last-name" />
+          </div>
+          <div class="input">
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="input">
+            <label for="phone">PHONE NUMBER</label>
+            <input type="tel" name="phone" id="phone" />
+          </div>
+          <div class="input">
+            <label for="password">PASSWORD</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="invalid"
+            />
+            <label for="password" class="error" id="error"
+              >*Passwords do not match.</label
+            >
+          </div>
+          <div class="input">
+            <label for="confirm">CONFIRM PASSWORD</label>
+            <input
+              type="password"
+              name="confirm"
+              id="confirm"
+              class="invalid"
+            />
+          </div>
+        </form>
+      </div>
+      <button type="button" form="form">Create Account</button>
+      <div class="login">Already have an account? <a>Log in</a></div>
+    </div>
+  </body>
 </html>
